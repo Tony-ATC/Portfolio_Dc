@@ -15,7 +15,8 @@ body{
     .logo{
         img{
             width: 15%;
-            margin: 0;
+            margin: 0%;
+            float: left;
         }
     }
 
@@ -119,12 +120,12 @@ section{
         font-weight: bold;
         display: inline-block;
     }
+}
 
-    .hero_img{
-        width: 70%;
-        margin-top: 3em;
-        
-    }
+.hero_img{
+    width: 70%;
+    margin-top: 3em;
+    
 }
 
 
@@ -231,13 +232,17 @@ iframe{
         display: none;
     }
 
+    .hero_img{
+        width: 70%;
+    }
+
     .navbar{
         ul.primary_nav{
             margin: 0;
         }
         .container{
             display: grid;
-            grid-template-columns: 180px, auto;
+            grid-template-columns: 350px auto;
             justify-content: unset;
         }
 
@@ -256,10 +261,84 @@ iframe{
                 a{
                     color: black;
                     font-size: 1em;
-                    padding: .1em 1em;
+                    padding: 1em 1em;
+
+                }
+            }
+
+            .premium_sh{
+                a{
+                    color: var(--primary_color);
+                    border: 3px solid var(--primary_color);
+                    font-weight: bold;
+                    border-radius: 5em;
+
+                    &:hover{
+                        background: var(--primary_color);
+                        color: white;
+                    }
                 }
             }
         }
     }
     
+}
+
+@media only screen and (min-width: 1080px){
+    .container{
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section{
+        padding: 10em 4em;
+    }
+
+    .hero{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+
+            .left_col{
+                margin: 3em 3em 0 5em;
+
+                h1{
+                    font-size: 3em;
+                    width: 90%;
+                }
+            }
+
+            .hero_img{
+                width: 30%;
+            }
+        }
+    }
+
+    .features_section{
+        .features_list{
+            display: block;
+            margin-left: 5em;
+        }
+
+        position: relative;
+
+        img{
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 40em;
+            bottom: -5.6em;
+        }
+    }
+
+    .testimonials_section{
+        ul{
+            display: flex;
+            
+            li{
+                margin: 0 1em;
+            }
+        }
+    }
 }

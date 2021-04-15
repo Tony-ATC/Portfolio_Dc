@@ -15,7 +15,8 @@ body {
 
 .navbar .logo img {
   width: 15%;
-  margin: 0;
+  margin: 0%;
+  float: left;
 }
 
 .navbar nav {
@@ -115,7 +116,7 @@ section {
   display: inline-block;
 }
 
-.left_col .hero_img {
+.hero_img {
   width: 70%;
   margin-top: 3em;
 }
@@ -220,14 +221,17 @@ iframe {
   .mobile_menu, .mobile_menu_exit {
     display: none;
   }
+  .hero_img {
+    width: 70%;
+  }
   .navbar ul.primary_nav {
     margin: 0;
   }
   .navbar .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 180px, auto;
-        grid-template-columns: 180px, auto;
+    -ms-grid-columns: 350px auto;
+        grid-template-columns: 350px auto;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
@@ -253,7 +257,68 @@ iframe {
   .navbar nav ul a {
     color: black;
     font-size: 1em;
-    padding: .1em 1em;
+    padding: 1em 1em;
+  }
+  .navbar nav .premium_sh a {
+    color: var(--primary_color);
+    border: 3px solid var(--primary_color);
+    font-weight: bold;
+    border-radius: 5em;
+  }
+  .navbar nav .premium_sh a:hover {
+    background: var(--primary_color);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left_col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left_col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero .container .hero_img {
+    width: 30%;
+  }
+  .features_section {
+    position: relative;
+  }
+  .features_section .features_list {
+    display: block;
+    margin-left: 5em;
+  }
+  .features_section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 40em;
+    bottom: -5.6em;
+  }
+  .testimonials_section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials_section ul li {
+    margin: 0 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
