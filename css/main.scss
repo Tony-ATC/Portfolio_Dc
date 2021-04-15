@@ -15,6 +15,7 @@ body{
     .logo{
         img{
             width: 15%;
+            margin: 0;
         }
     }
 
@@ -228,6 +229,37 @@ iframe{
     
     .mobile_menu, .mobile_menu_exit{
         display: none;
+    }
+
+    .navbar{
+        ul.primary_nav{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 180px, auto;
+            justify-content: unset;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background: none;
+            position: unset;
+            height: auto;
+            width: 100%;
+            padding: 0;
+
+            ul{
+                display: flex;
+
+                a{
+                    color: black;
+                    font-size: 1em;
+                    padding: .1em 1em;
+                }
+            }
+        }
     }
     
 }

@@ -15,6 +15,7 @@ body {
 
 .navbar .logo img {
   width: 15%;
+  margin: 0;
 }
 
 .navbar nav {
@@ -218,6 +219,41 @@ iframe {
 @media only screen and (min-width: 768px) {
   .mobile_menu, .mobile_menu_exit {
     display: none;
+  }
+  .navbar ul.primary_nav {
+    margin: 0;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px, auto;
+        grid-template-columns: 180px, auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
