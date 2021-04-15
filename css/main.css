@@ -21,7 +21,7 @@ body {
   display: none;
 }
 
-.navbar nav.menu-btn {
+.navbar nav.menu_btn {
   display: block;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .navbar .mobile_menu {
   cursor: pointer;
-  width: 8%;
+  width: 9%;
 }
 
 a {
@@ -127,6 +127,10 @@ section {
 .features_section ul {
   margin: 0%;
   padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 .features_section ul li {
@@ -209,5 +213,11 @@ section {
 iframe {
   width: 100%;
   height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile_menu, .mobile_menu_exit {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

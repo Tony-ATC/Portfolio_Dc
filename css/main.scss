@@ -22,7 +22,7 @@ body{
         display: none;
     }
 
-    nav.menu-btn{
+    nav.menu_btn{
         display: block;
     }
 
@@ -72,7 +72,7 @@ body{
 
     .mobile_menu{
         cursor: pointer;
-        width: 8%;
+        width: 9%;
     }
 }
 
@@ -134,7 +134,8 @@ section{
     ul{
         margin: 0%;
         padding-left: .1em;
-        //come back
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
         li{
             font-size: 1.5em;
@@ -223,3 +224,10 @@ iframe{
     height: 300px;
 }
 
+@media only screen and (min-width: 768px){
+    
+    .mobile_menu, .mobile_menu_exit{
+        display: none;
+    }
+    
+}
