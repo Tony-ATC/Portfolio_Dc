@@ -1,5 +1,5 @@
 :root{
-    --primary_color: rgb(76, 76, 156);
+    --primary_color: rgb(5, 83, 201);
 }
 
 body{
@@ -14,7 +14,7 @@ body{
 
     .logo{
         img{
-            width: 15%;
+            width: 17%;
             margin: 0%;
             float: left;
         }
@@ -34,7 +34,7 @@ body{
         width: 66%;
         right: 0;
         top: 0;
-        background: rgb(50, 50, 119);
+        background: var(--primary_color);
         height: 100vh;
         padding: 1em;
 
@@ -169,7 +169,7 @@ section{
     color: white;
 
     li{
-        background: rgb(50, 50, 119);
+        background: rgb(2, 48, 102);
         text-align: center;
         padding: 2em 1em;
         width: 80%;
@@ -179,7 +179,7 @@ section{
         img{
             width: 5em;
             height: 5em;
-            border: 5px solid rgb(50, 50, 119);
+            border: 5px solid rgb(2, 48, 102);
             border-radius: 50%;
             margin-top: -4.5em;
 
