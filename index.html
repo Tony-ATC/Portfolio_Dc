@@ -4,36 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATC.Portfolio()</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>test New NavBar</title>
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./JavaScript/script.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="navbar">
+    <header>
         <div class="container">
-            <a class="logo" href="#"><img src="images/ATC - Logo.png" alt="ATC_Logo"> </a>
-
-            <img id="mobile_cta" class="mobile_menu" src="images/menu(coding brackets).svg" alt="Open Navigation">
-
-            <nav>
-                <img id="mobile_exit" class="mobile_menu_exit" src="images/exit(close).svg" alt="Close Navigation">
-                <ul class="primary_nav">
-                    <li><a href="#">.Bio()</a></li>
-                    <li><a href="#">.Skills &amp; Abilities()</a></li>
-                    <li><a href="#">.Experiences()</a></li>
-                    <li><a href="#">.Courses()</a></li>
+            <nav class="nav">
+                <!-- Mobile Version -->
+                <ul class="nav_list nav_list_mobile">
+                    <li class="nav_item">
+                        <div class="mobile_menu">
+                            <span class="line line_top"></span>
+                            <span class="line line_bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="testNewNavBar.html" class="nav_link nav_link_home">
+                        </a>
+                    </li>
                 </ul>
+                <!-- Larger Version -->
+                <ul class="nav_list nav_list_larger">
+                    <li class="nav_item_hidden">
+                        <a href="testNewNavBar.html" class="nav_link nav_link_home"></a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">.Bio()</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">.Skills &amp; Abilities()</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">.Courses()</a>
+                    </li>
 
-                <ul class="secondary_nav">
-                    <li><a href="#">.Contact()</a></li>
-                    <li class="premium_sh"><a href="#">.SneakerHead()</a></li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">.Contact()</a>
+                    </li>
+                    <li class="premium_sh">
+                        <a href="#" class="nav_link">.SneakerHead()</a>
+                    </li>
                 </ul>
-
+                
+                <ul class="nav_list nav_list_secondary">
+                    
+                </ul>
             </nav>
         </div>
-    </div>
-</header>
+    </header>
 
     <section class="hero">
         <div class="container">
@@ -122,6 +142,5 @@
             </div>
         </div>
     </section>
-    
 </body>
 </html>
