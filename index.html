@@ -9,52 +9,34 @@
     <script src="./JavaScript/script.js" defer></script>
 </head>
 <body>
-    <header>
+<header>
+    <!--Logo + Nav + Open/Close_Button-->
+    <div class="navbar">
         <div class="container">
-            <nav class="nav">
-                <!-- Mobile Version -->
-                <ul class="nav_list nav_list_mobile">
-                    <li class="nav_item">
-                        <div class="mobile_menu">
-                            <span class="line line_top"></span>
-                            <span class="line line_bottom"></span>
-                        </div>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./index.html" class="nav_link nav_link_home">
-                        </a>
-                    </li>
-                </ul>
-                <!-- Larger Version -->
-                <ul class="nav_list nav_list_larger">
-                    <li class="nav_item_hidden">
-                        <a href="./index.html" class="nav_link nav_link_home"></a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./html_pages/Bio.html" class="nav_link">.Bio()</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./html_pages/Skills&Abilities.html" class="nav_link">.Skills &amp; Abilities()</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./html_pages/Courses.html" class="nav_link">.Courses()</a>
-                    </li>
+            <a class="logo" href="./index.html"><img src="images/ATC - Logo.png" alt="ATC_Logo"></a>
 
-                    <li class="nav_item">
-                        <a href="./html_pages/Contact.html" class="nav_link">.Contact()</a>
-                    </li>
-                    <li class="premium_sh">
-                        <a href="./html_pages/Sneakerhead.html" class="nav_link">.SneakerHead()</a>
-                    </li>
-                </ul>
+            <img id="mobile_cta" class="mobile_menu" src="images/menu(coding brackets).svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile_exit" class="mobile_menu_exit" src="images/exit(close).svg" alt="Close Navigation">
                 
-                <ul class="nav_list nav_list_secondary">
-                    
+                <ul class="primary_nav">
+                    <li><a href="./html_pages/Bio.html">.Bio()</a></li>
+                    <li><a href="./html_pages/Skills&Abilities.html">.Skills &amp; Abilities()</a></li>
+                    <li><a href="./html_pages/Experiences.html">.Experiences()</a></li>
+                    <li><a href="./html_pages/Courses.html">.Courses()</a></li>
                 </ul>
+
+                <ul class="secondary_nav">
+                    <li><a href="./html_pages/Contact.html">.Contact()</a></li>
+                    <li class="premium_sh"><a href="./html_pages/Sneakerhead.html">.SneakerHead()</a></li>
+                </ul>
+
             </nav>
         </div>
-    </header>
-
+    </div>
+</header>
+    <!--Hero_Section-->
     <section class="hero">
         <div class="container">
             <div class="left_col">
@@ -69,6 +51,7 @@
         </div>
     </section>
 
+    <!--Features_Section-->
     <section class="features_section">
         <div class="container">
             <ul class="features_list">
@@ -82,6 +65,7 @@
         <img src="images/desk_html_computer.svg" alt="desk_html_computer">
     </section>
 
+    <!--Testimonials_Section-->
     <section class="testimonials_section">
         <div class="container">
             <ul>
@@ -119,6 +103,7 @@
         </div>
     </section>
 
+    <!--Contact_Section-->
     <section class="contact_section">
         <div class="container">
             <div class="contact_left">
@@ -142,5 +127,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html>

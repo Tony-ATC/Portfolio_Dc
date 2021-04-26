@@ -5,98 +5,110 @@
 body {
   background: lightgray;
   margin: 0%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1400;
-  height: 4,4rem;
-  background-color: rgba(0, 0, 0, 0.603);
-  -webkit-backdrop-filter: blur(5rem);
-          backdrop-filter: blur(5rem);
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.nav_list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -1rem;
-  padding: 1.5%;
-}
-
-.nav_list_mobile {
-  display: none;
-}
-
-.nav_link {
-  font-size: 1em;
-  color: #fff;
-  padding: 1rem 3rem;
-}
-
-.nav_link:hover {
-  opacity: .3;
-}
-
-.nav_link_home {
-  background: url("../images/ATC - Logo.png") center no-repeat;
-  background-size: 65%;
-}
-
-a {
-  color: gray;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 section {
   padding: 5em 2em;
 }
 
+.navbar {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
+  padding: .5em;
+}
+
+.navbar .logo img {
+  width: 17%;
+  margin: 0%;
+  padding-left: 50%;
+  float: left;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar nav.menu_btn {
+  display: block;
+}
+
+.navbar nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--primary_color);
+  height: 100vh;
+  padding: 1em;
+}
+
+.navbar nav .mobile_menu_exit {
+  width: 9%;
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.navbar nav .primary_nav {
+  margin-top: 5em;
+}
+
+.navbar nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.navbar nav li a:hover {
+  font-weight: bold;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile_menu {
+  cursor: pointer;
+  width: 7%;
+  padding-right: 2%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hero {
   text-align: center;
 }
 
-.left_col .subhead {
+.hero .left_col .subhead {
   text-transform: uppercase;
   font-weight: bold;
   color: gray;
   letter-spacing: .3em;
 }
 
-.left_col h1 {
+.hero .left_col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: .2em;
 }
 
-.left_col .primary_cta {
+.hero .left_col .primary_cta {
   background: var(--primary_color);
   color: white;
   text-decoration: none;
@@ -107,7 +119,7 @@ section {
   display: inline-block;
 }
 
-.hero_img {
+.hero .hero_img {
   width: 70%;
   margin-top: 3em;
 }
@@ -153,7 +165,13 @@ section {
   color: white;
 }
 
-.testimonials_section li {
+.testimonials_section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials_section ul li {
   background: #023066;
   text-align: center;
   padding: 2em 1em;
@@ -162,7 +180,7 @@ section {
   border-radius: 1em;
 }
 
-.testimonials_section li img {
+.testimonials_section ul li img {
   width: 5em;
   height: 5em;
   border: 5px solid #023066;
@@ -208,7 +226,7 @@ iframe {
   height: 300px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
   .mobile_menu, .mobile_menu_exit {
     display: none;
   }
@@ -246,7 +264,6 @@ iframe {
     display: flex;
   }
   .navbar nav ul a {
-    color: black;
     font-size: 1em;
     padding: 1em 1em;
   }
@@ -259,6 +276,15 @@ iframe {
   .navbar nav .premium_sh a:hover {
     background: var(--primary_color);
     color: white;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .navbar {
+    padding: 1px;
+  }
+  .navbar .logo img {
+    width: 10%;
   }
 }
 
@@ -312,4 +338,4 @@ iframe {
     margin: 0 1em;
   }
 }
-/*# sourceMappingURL=mainTest.css.map */
+/*# sourceMappingURL=main.css.map */
