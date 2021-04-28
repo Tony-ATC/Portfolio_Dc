@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/css/Footer/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/SneakerHead/sneakerhead.css">
     <script src="../JavaScript/script.js" defer></script>
+    <script src="../JavaScript/sneakerHeadSlider.js"></script>
 </head>
 <body>
     <header>
@@ -44,7 +46,18 @@
             </div>
         </div>
     </header>
-
+    <section class="video_slider">
+        <video 
+            src="../video/Video_Portofolio_Part1.m4v" 
+            id="slider" 
+            autoplay loop>
+        </video>
+        <ul class="nav_video_slider">
+            <li onclick="videoUrl('../video/Video_Portofolio_Part1.m4v')"><img src="../images/ATC - Stencil Black.png" alt="ATC_Logo"></li>
+            <li onclick="videoUrl('../video/Video_Portofolio_Part2.m4v')"><img src="../images/ATC - Stencil Black.png" alt="ATC_Logo"></li>
+            <li onclick="videoUrl('../video/Video_Portofolio_Part3.m4v')"><img src="../images/ATC - Stencil Black.png" alt="ATC_Logo"></li>
+            <li onclick="videoUrl('../video/Video_Portofolio_Part4.m4v')"><img src="../images/ATC - Stencil Black.png" alt="ATC_Logo"></li>
+    </section>   
     <footer>
         <div class="footer-content">
             <h3>A T C</h3>
